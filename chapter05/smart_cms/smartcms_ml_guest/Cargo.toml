@@ -1,5 +1,6 @@
 [package]
 name = "smartcms_ml_guest_chapter05"
+#name = "smartcms_ml_guest"
 version = "0.1.0"
 edition = "2021"
 

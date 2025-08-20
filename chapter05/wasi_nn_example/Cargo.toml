@@ -8,6 +8,10 @@ wit-bindgen = { version = "0.33.0",  default-features = false, features = ["macr
 image = "0.25.2"
 ndarray = "0.16.1"
 
+# this leads to multiple workspace detection - commenting out for now
+#[workspace.dependencies]
+#spdx = "<0.10.9"
+
 [profile.release]
 codegen-units = 1
 opt-level = "s"
