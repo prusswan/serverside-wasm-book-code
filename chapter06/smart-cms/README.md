@@ -15,3 +15,5 @@ How to run the frontend:
 http-server ./index.html
 ```
 
+Use ollama-provider from https://github.com/danbugs/ollama-provider/tree/chapter08
+Use ollama-provider/ollama-example to verify if the provider is working
