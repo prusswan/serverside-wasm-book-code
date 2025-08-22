@@ -1,5 +1,12 @@
 # `hello-world-spin`
 
+- k3d cluster create command to avoid eviction
+```shell
+k3d cluster create wasm-cluster --image ghcr.io/spinframework/containerd-shim-spin/k3d:v0.19.0 --port "8081:80@loadbalancer" --agents 2 \
+  --k3s-arg '--kubelet-arg=eviction-hard=imagefs.available<1%,nodefs.available<1%@agent:*' \
+  --k3s-arg '--kubelet-arg=eviction-minimum-reclaim=imagefs.available=1%,nodefs.available=1%@agent:*'
+```
+
 - Pre-reqs:
     - K8s cluster w/ the container-spin-shim installed on every node.
     - cert-manager installed onto the cluster.

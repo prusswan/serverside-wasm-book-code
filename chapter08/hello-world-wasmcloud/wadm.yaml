@@ -9,7 +9,7 @@ spec:
     - name: http-component
       type: component
       properties:
-        image: ghcr.io/danbugs/serverside-wasm-book-code/hello-world-wasmcloud:v1
+        image: ghcr.io/prusswan/serverside-wasm-book-code/hello-world-wasmcloud:v1
       traits:
         - type: spreadscaler
           properties:

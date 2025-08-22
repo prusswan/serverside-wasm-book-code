@@ -5,3 +5,4 @@ metadata:
 spec:
   lattice: default
   version: "1.4.1"
+  registryCredentialsSecret: ghcr-registry-secret
